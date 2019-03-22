@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Notes</title>
+    <link rel="shortcut icon" type="image/x-icon" href="images/edit.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+
+
+<body>
+<div class="container-fluid">
+    <div class="row" id="notes-container">
+        <div id="add-note" class="col-xl-5 offset-xl-1 col-lg-5 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1">
+            <label class="label-headers">Add a note:</label>
+            <input type="text" id="note-title" placeholder="Title" onkeypress="changeRedUnderline(this)">
+            <textarea class="form-control" id="note-body" placeholder="Body" rows=5></textarea>
+            <button id="add-note-button"  class="btn btn-primary button-styles" onclick="addNote()">Add Note</button>
+        </div>
+
+        <div class="col-xl-4 offset-xl-1 col-lg-4 offset-lg-1 col-md-10 offset-md-1 col-sm-10 offset-sm-1" id="notesUlDiv">
+            <span class="label-headers">Notes:</span>
+            <ul class="list-group" id="notesUl">
+            </ul>
+            <button type="button" class="btn btn-danger button-styles" onclick="deleteNotes()" id="delete-notes-button">Delete all Notes</button>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>

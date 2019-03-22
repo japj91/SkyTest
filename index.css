@@ -1,0 +1,86 @@
+#add-note{
+    display: flex;
+    flex-direction: column;
+}
+
+#note_body {
+    width: 100%;
+    margin-bottom: 25%;
+}
+
+#note-title{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #C7C7C7;
+    width: 35%;
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.required-text{
+    color: red;
+    margin-left: 5%;
+    display: inline;
+}
+
+.notesObjects{
+    margin-top: 2%;
+}
+
+@media only screen and (max-width: 575px){
+    #delete-notes-button{
+        margin-top: 6%;
+        margin-bottom: 10%; /*added for spacing*/
+    }
+    #notesUlDiv{
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 576px) {
+    #notesUlDiv{
+        margin-top: 12%;
+    }
+    #delete-notes-button{
+        margin-top: 10%;
+    }
+
+}
+
+@media (min-width: 768px){
+    #notesUlDiv{
+        margin-top: 8%;
+    }
+    #delete-notes-button{
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 992px) {
+    #notesUlDiv{
+        margin-top: 0;
+    }
+    #delete-notes-button{
+        width:70%;
+        margin-top: 5%;
+    }
+}
+
+@media (min-width: 1200px) {
+    #delete-notes-button{
+        margin-top: 3%;
+        width:46%;
+    }
+}
+
+#notes-container{
+    margin-top: 4%;
+}
+
+.label-headers{
+    font-size: 24px;
+}
+#add-note-button{
+    width:35%;
+    margin-top: 5%;
+}
