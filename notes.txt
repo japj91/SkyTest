@@ -4,6 +4,10 @@ Coding convetion:
     Javascript naming is camel case
     Functions in Javascript are made according to es6 standard
 
+Testing:
+    When relaunching the HTML file the old notes appear
+    On refresh old notes appear
+    Tested on both windows and OSX
 
 Assumptions:
     That a user will add a title at minimum
